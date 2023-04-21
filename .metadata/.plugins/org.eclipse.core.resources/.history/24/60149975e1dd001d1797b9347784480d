@@ -1,0 +1,14 @@
+/*
+ * data.h
+ *
+ *  Created on: Apr 18, 2023
+ *      Author: rico
+ */
+
+#ifndef INC_DATA_H_
+#define INC_DATA_H_
+
+/* Includes ----------------------------------------------------------*/
+#include "main.h"
+
+#endif /* INC_DATA_H_ */

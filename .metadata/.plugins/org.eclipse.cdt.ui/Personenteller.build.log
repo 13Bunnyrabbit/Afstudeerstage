@@ -1,0 +1,13 @@
+12:09:37 **** Incremental Build of configuration Debug for project Personenteller ****
+make -j8 all 
+arm-none-eabi-size   Personenteller.elf 
+arm-none-eabi-objdump -h -S  Personenteller.elf  > "Personenteller.list"
+arm-none-eabi-size: Personenteller.elf: file format not recognized
+make: *** [makefile:69: default.size.stdout] Error 3
+make: *** Waiting for unfinished jobs....
+arm-none-eabi-objdump: Personenteller.elf: file format not recognized
+make: *** [makefile:74: Personenteller.list] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+12:09:37 Build Failed. 3 errors, 0 warnings. (took 376ms)
+

@@ -1,0 +1,29 @@
+// Copyright (c) Acconeer AB, 2016-2021
+// All rights reserved
+
+#ifndef ACC_INTEGRATION_STM_2X_SPARKFUN_H_
+#define ACC_INTEGRATION_STM_2X_SPARKFUN_H_
+
+/**
+ * @brief Sets pins for data transfer sensor, transfers data from sensor and saves to buffer.
+ */
+static void acc_hal_integration_sensor_transfer(acc_sensor_id_t, uint8_t*, size_t);
+
+/**
+ * @brief Sets pins to power sensor.
+ */
+static void acc_hal_integration_sensor_power_on(acc_sensor_id_t);
+
+/**
+ * @brief Sets pins to power off sensor.
+ */
+static void acc_hal_integration_sensor_power_off(acc_sensor_id_t);
+
+
+/**
+ * @brief Sets pins for sensor, transfers data from sensor and saves to buffer.
+ *
+ * @return Returns EXIT_SUCCESS if successful, otherwise EXIT_FAILURE
+ */
+static bool acc_hal_integration_wait_for_sensor_interrupt(acc_sensor_id_t);
+
